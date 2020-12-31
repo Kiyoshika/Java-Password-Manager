@@ -1,5 +1,6 @@
 # Java Password Manager
-A simple password manager with import/export functionality built with Swing UI.
+A simple password manager with import/export functionality built with Swing UI. \
+Built with: Netbeans 12
 
 ### Disclaimers
 * This is a small side project, there may be bugs when using this software; by using this software you acknowledge that potential bugs can lead to you lose your saved passwords.
