@@ -27,6 +27,8 @@ import javax.swing.KeyStroke;
 import javax.swing.UIManager;
 import org.jasypt.util.password.StrongPasswordEncryptor;
 import org.jasypt.util.text.AES256TextEncryptor;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
 /**
  *
@@ -56,6 +58,16 @@ public class CoreGUI extends javax.swing.JFrame {
         KeyStroke exportShortcut = KeyStroke.getKeyStroke(KeyEvent.VK_E, Toolkit.getDefaultToolkit().getMenuShortcutKeyMask());
         importConfig.setAccelerator(importShortcut);
         exportConfig.setAccelerator(exportShortcut);
+        
+        // add listener for when we change tabs, need to clear the password field
+        applicationTabbedPane.addChangeListener(new ChangeListener() {
+            public void stateChanged(ChangeEvent e) {
+                passwordField.setText("");
+                favoritesListBox.clearSelection();
+                websitesListBox.clearSelection();
+                applicationsListBox.clearSelection();
+            }
+        });
         
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {

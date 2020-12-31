@@ -20,6 +20,7 @@ com\zweaver\core\CoreGUI$11.class
 com\zweaver\accounts\LoginForm$2.class
 com\zweaver\dialogue\ContinueCancelDialogue$3.class
 com\zweaver\accounts\ConfirmPassword.class
+com\zweaver\core\CoreGUI$13.class
 com\zweaver\core\CoreGUI$5.class
 com\zweaver\dialogue\OKDialogue$1.class
 com\zweaver\core\AddNewEntry.class
