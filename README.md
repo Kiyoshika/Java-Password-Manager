@@ -15,6 +15,6 @@ Built with: Netbeans 12
 ### How to transfer configurations
 One feature of this software is to transfer your saved passwords to other systems.
 1. Open the passwordmanager directory located in the Users folder on your system (On Windows it will be C:/Users/your_name/passwordmanager/). Linux may be /home/your_name/passwordmanager/
-2. Zip your user folder (there will be a folder with your created username) and either put it on USB or email it to yourself (the files inside are encrypted).
-3. On your new system, unzip your user folder and create a directory called passwordmanager in your system's user folder (Windows: C:/Users/your_name/)
-4. Paste your unzipped folder in the newly-created passwordmanager folder, which should now look like (C:/Users/your_name/passwordmanager/user_name)
+2. Zip the passwordmanager folder (or zip individual user folders if you only want to transfer one user)
+3. On your new system, unzip the passwordmanager folder in your home user directory (C:/Users/your_name/ on Windows)
+4. If you decided to zip only a user folder rather than the passwordmanager folder, then create a new folder called "passwordmanager" and unzip your user folder there.
